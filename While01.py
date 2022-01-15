@@ -6,4 +6,16 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    idx=0
+    b=[]
+    while idx<10:
+        a=s.count(str(idx))
+        b.append(a)
+       
+        idx+=1
+    
+    
+    
+        
+    return sum(b)
+print(main('today is 15.01.202256'))
