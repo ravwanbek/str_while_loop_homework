@@ -1,3 +1,7 @@
+
+from string import whitespace
+
+
 def main(s):
     """
     A variable of type str is given. Find how many punctuations it contains and return.
@@ -6,4 +10,14 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    idx=0
+    alnum=0
+    
+    
+    while idx<len(s):
+        if not s[idx].isdigit() or s[idx].isalpha():
+            alnum+=1
+        idx+=1
+    print(alnum)
+    return alnum
+print(main('hlsnlds  1235ds8[]-*/++ ++++]`'))
