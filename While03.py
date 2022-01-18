@@ -15,7 +15,7 @@ def main(s):
     
     
     while idx<len(s):
-        if not s[idx].isdigit() or s[idx].isalpha():
+        if not s[idx].isalnum():
             alnum+=1
         idx+=1
     space=s.count(chr(32))
@@ -23,4 +23,4 @@ def main(s):
     
 
     return alnum-space
-print(main('hlsnlds  1235ds8[]-*/++ ++++]`'))
+print(main('1234    **++'))
