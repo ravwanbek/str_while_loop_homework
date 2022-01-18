@@ -18,6 +18,9 @@ def main(s):
         if not s[idx].isdigit() or s[idx].isalpha():
             alnum+=1
         idx+=1
-    print(alnum)
-    return alnum
+    space=s.count(chr(32))
+    
+    
+
+    return alnum-space
 print(main('hlsnlds  1235ds8[]-*/++ ++++]`'))
