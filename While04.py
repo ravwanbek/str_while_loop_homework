@@ -6,4 +6,14 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    
+
+    idx=0
+    letter=0
+    while idx<len(s):
+        if s[idx].isupper():
+            letter+=1
+        idx+=1
+    
+    return letter
+print(main('today is 15.01.20225T6jkhdalsk'))
