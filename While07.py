@@ -6,6 +6,12 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
-s=9
-print(s)
+    idx=0
+    even_num=0
+    while idx<len(s):
+        if int(s[idx]) % 2==0:
+            even_num+=1
+        idx+=1
+    
+    return even_num
+print(main('82341095161'))
