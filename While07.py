@@ -7,3 +7,5 @@ def main(s):
         int: return answer
     """
     return
+s=9
+print(s)
